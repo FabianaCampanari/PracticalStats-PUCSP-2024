@@ -12,6 +12,10 @@ This repository contains a Python script that performs various statistical analy
 
 <br>
 
+ #### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari)
+
+  <br>
+
 ## Features:
 
 Descriptive statistics: Mean, Median, Mode, Variance, Standard Deviation, Coefficient of Variation (CV), and Amplitude (Range).
