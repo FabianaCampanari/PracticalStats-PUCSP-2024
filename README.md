@@ -1,4 +1,9 @@
 
+![2129d7ad-6afd-4166-9bf1-a4f9c3b9e5cc](https://github.com/user-attachments/assets/faf3e0a3-3610-4c0b-99bb-afb7a765f28d)
+
+
+
+
 # <p align="center">  Statistical Measures in Python - Age and Salary Analysis
 
 This repository contains a Python script that performs various statistical analyses on a dataset of employees. The script calculates descriptive statistics for the variables age (idade) and salary (salario) across the dataset as a whole and grouped by certain categories such as region (reg_proc) and education level (grau_instrucao).
