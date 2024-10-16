@@ -1,9 +1,9 @@
 
-<br>
+<br><br>
 
 ![2129d7ad-6afd-4166-9bf1-a4f9c3b9e5cc](https://github.com/user-attachments/assets/faf3e0a3-3610-4c0b-99bb-afb7a765f28d)
 
-<br>
+<br><br>
 
 
 # <p align="center">  Statistical Measures in Python - Age and Salary Analysis
