@@ -1,10 +1,9 @@
 
 cff-version: 1.2.0
-title: Statistical Measures repository
+title: probability-statistical-measures repository
 message: If you really want to cite this repository, here's how you should cite it.
 type: software
 authors:
   - given-names: Fabiana
     family-names: Campanari
-repository-code: https://github.com/FabianaCampanari/statisticalMeasures-python
-license: MIT License
+repository-code:https://github.com/FabianaCampanari/probability-statistical-measures
