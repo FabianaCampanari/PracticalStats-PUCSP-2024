@@ -6,9 +6,10 @@
 <br><br>
 
 
-# <p align="center">  Prtobability - Statistical Measures - Distributions - Population and Sample - Hypothesis Tests I - Hypothesis Tests II
+## <p align="center">  Prtobability - Statistical Measures - Distributions - Population and Sample - Hypothesis Tests I - Hypothesis Tests II
 
 This repository is dedicated to the development of Statistical and Probability codes, created during the second semester of 2024 in the undergraduate program in Data Science and Artificial Intelligence at PUC-SP, under the guidance of Professor [Erick Bacconni](). It contains Python scripts that perform various analyses of statistical measures, distributions, population and sample, hypothesis tests, exercises, and datasets, as well as supporting material on the content. The script calculates descriptive statistics for the variables age and salary, both for the total dataset and grouped by categories such as region and education level.
+
 <br>
 
  #### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari)
