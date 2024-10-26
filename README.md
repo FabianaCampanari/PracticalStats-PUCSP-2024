@@ -6,7 +6,45 @@
 <br><br>
 
 
-## <p align="center">  Probability - Statistical Measures - Distributions - Population and Sample - Hypothesis Tests I - Hypothesis Tests II
+## <p align="center">  Practical Stats - PUCSP  2nd Semester 2024 
+
+
+
+**Statistics and Probability**
+ 
+This repository, created by Fabiana Campanari in the 2nd semester of 2024, consolidates the materials and code developed for the Statistics and Probability course within the Data Science and Artificial Intelligence program at PUC-SP, under the guidance of Professor Erick Bacconni. It is designed to support hands-on learning through exercises, scripts, and datasets.
+
+### Repository Contents:
+
+- **Python Scripts**: This section includes scripts for a wide range of statistical analyses, covering key topics such as distributions, population and sample concepts, and hypothesis testing. Calculations include:
+  - **Central Tendency**: Mean, median, and mode
+  - **Dispersion**: Standard deviation, variance, and range
+  - **Positional Measures**: Percentiles and quartiles (Q1, Q2, Q3)
+  - **Distribution Shape**: Skewness and kurtosis
+  - **Confidence Intervals** for estimating population parameters
+  - **Correlation and Covariance** for bivariate analysis
+
+- **Practical Exercises**: Available in Python and Excel, these exercises provide hands-on practice in calculating statistical measures and applying concepts, including:
+  - **Analysis of Variance (ANOVA)**: Comparing means across multiple groups
+  - **Hypothesis Testing**: Null hypothesis (\( H_0 \)) tests, such as T-tests (one-sample, independent, and paired), ANOVA, and Chi-square tests
+  - **Regression Analysis**: Linear regression models for predictive analysis
+  - **Probability**: Exercises covering probability distributions, expected value, and variance
+
+- **Statistical Tests**: This section includes implementations of statistical tests tailored to analyze variables like age and salary, categorized by region and educational level. Each test includes the process of setting up and testing the null hypothesis (\( H_0 \)) for statistical significance.
+
+- **Support Materials**: Supplementary documentation on probability, relevant datasets, and homework assignments to reinforce key concepts.
+
+### Study Topics:
+
+This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
+
+---
+
+This final version is clear, well-structured, and emphasizes the hands-on nature of the repository while covering all requested content concisely.
+
+
+
+
 
 
 <br>
