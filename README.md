@@ -38,14 +38,9 @@ This repository, created by Fabiana Campanari in the 2nd semester of 2024, conso
 
 This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
 
----
-
-This final version is clear, well-structured, and emphasizes the hands-on nature of the repository while covering all requested content concisely.
 
 
-
-
-
+<!--
 
 <br>
 
@@ -77,6 +72,8 @@ The dataset used in this analysis contains employee details, including their age
 - Necessary libraries (pandas) installed.
 
 - An Excel file containing the dataset in the appropriate format.
+
+-->
 
 
 
