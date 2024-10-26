@@ -6,9 +6,8 @@
 <br><br>
 
 
-## <p align="center">  Prtobability - Statistical Measures - Distributions - Population and Sample - Hypothesis Tests I - Hypothesis Tests II
+## <p align="center">  Probability - Statistical Measures - Distributions - Population and Sample - Hypothesis Tests I - Hypothesis Tests II
 
-This repository is aimed at the development of codes related to Statistics and Probability, created in the second semester of 2024 in the Data Science and Artificial Intelligence course at PUC-SP, under the supervision of Professor [Erick Bacconni](). It includes Python scripts for statistical analyses, distributions, population and sample, hypothesis testing, exercises, and datasets. It also contains supporting material on probability and homework assignments completed during the semester. One of the datasets includes scripts that calculate descriptive statistics for the variables age and salary, both in total and by categories such as region and educational level. Furthermore, it covers all types of statistical probability tests, such as T-test, ANOVA, Chi-square, and supplements.
 
 <br>
 
