@@ -83,7 +83,134 @@ The dataset used in this analysis contains employee details, including their age
 
 - An Excel file containing the dataset in the appropriate format.
 
--->
+
+## Codes
+
+### 1. Statics Measures
+
+```python
+
+Copy code
+
+# Importing pandas library for data manipulation and analysis
+import pandas as pd
+
+# Define the file path to the dataset
+Caminho = '/path/to/your/file/cadastro_funcionarios.xlsx'
+
+# Load the dataset into a DataFrame
+df = pd.read_excel(Caminho)
+
+# Display the first 5 rows of the dataset
+df.head()
+
+# --- Descriptive Statistics for 'idade' (age) ---
+
+# Generate descriptive statistics for the 'idade' (age) column
+print("Descriptive statistics for 'idade':")
+print(df.idade.describe())
+
+# Calculate the range (amplitude) of the 'idade' column
+ampl_idade = df.idade.max() - df.idade.min()
+print("\nAmplitude of 'idade':", ampl_idade)
+
+# Calculate the mode of the 'idade' column
+moda_idade = df.idade.mode()
+print("\nMode of 'idade':", moda_idade)
+
+# Calculate the variance of the 'idade' column
+var_idade = df.idade.var()
+print("\nVariance of 'idade':", var_idade)
+
+# Calculate additional statistics for 'idade'
+min_idade = df.idade.min()
+max_idade = df.idade.max()
+media_idade = df.idade.mean()
+mediana_idade = df.idade.median()
+desvpad_idade = df.idade.std()
+
+print(f"\nMin: {min_idade}, Max: {max_idade}, Mean: {media_idade}, Median: {mediana_idade}, Std Dev: {desvpad_idade}")
+
+# Calculate the coefficient of variation (CV) for 'idade'
+cv_idade = df.idade.std() / df.idade.mean()
+print("\nCoefficient of variation (CV) of 'idade':", cv_idade)
+
+# --- Grouped Descriptive Statistics for 'idade' by 'reg_proc' (region) ---
+
+# Generate descriptive statistics for 'idade' grouped by 'reg_proc' (region)
+print("\nDescriptive statistics for 'idade' grouped by 'reg_proc':")
+print(df.groupby('reg_proc')['idade'].describe())
+
+# Calculate the range (amplitude) for 'idade' by region
+ampl_idade_reg = df.groupby('reg_proc')['idade'].max() - df.groupby('reg_proc')['idade'].min()
+print("\nAmplitude of 'idade' by region:")
+print(ampl_idade_reg)
+
+# Calculate the variance of 'idade' by region
+var_idade_reg = df.groupby('reg_proc')['idade'].var()
+print("\nVariance of 'idade' by region:")
+print(var_idade_reg)
+
+# Calculate the coefficient of variation (CV) for 'idade' by region
+cv_idade_reg = df.groupby('reg_proc')['idade'].std() / df.groupby('reg_proc')['idade'].mean()
+print("\nCoefficient of variation (CV) of 'idade' by region:")
+print(cv_idade_reg)
+
+# Calculate the mode of 'idade' by region
+moda_idade_reg = df.groupby('reg_proc')['idade'].agg(pd.Series.mode)
+print("\nMode of 'idade' by region:")
+print(moda_idade_reg)
+
+# --- Descriptive Statistics for 'salario' (salary) ---
+
+# Generate descriptive statistics for 'salario' (salary)
+print("\nDescriptive statistics for 'salario':")
+print(df.salario.describe())
+
+# Calculate the range (amplitude) of 'salario'
+ampl_salario = df['salario'].max() - df['salario'].min()
+print("\nAmplitude of 'salario':", ampl_salario)
+
+# Calculate the mode of 'salario'
+moda_salario = df.salario.mode()
+print("\nMode of 'salario':", moda_salario)
+
+# Calculate the variance of 'salario'
+var_salario = df.salario.var()
+print("\nVariance of 'salario':", var_salario)
+
+# Calculate the coefficient of variation (CV) for 'salario'
+cv_salario = df['salario'].std() / df['salario'].mean()
+print("\nCoefficient of variation (CV) of 'salario':", cv_salario)
+
+# --- Grouped Descriptive Statistics for 'salario' by 'grau_instrucao' (education level) ---
+
+# Generate descriptive statistics for 'salario' grouped by 'grau_instrucao' (education level)
+print("\nDescriptive statistics for 'salario' grouped by 'grau_instrucao':")
+print(df.groupby('grau_instrucao')['salario'].describe())
+
+# Calculate the range (amplitude) of 'salario' by 'grau_instrucao'
+ampl_salario_grau = df.groupby('grau_instrucao')['salario'].max() - df.groupby('grau_instrucao')['salario'].min()
+print("\nAmplitude of 'salario' by 'grau_instrucao':")
+print(ampl_salario_grau)
+
+# Calculate the mode of 'salario' by 'grau_instrucao'
+moda_salario_grau = df.groupby('grau_instrucao')['salario'].agg(lambda x: pd.Series.mode(x)[0])
+print("\nMode of 'salario' by 'grau_instrucao':")
+print(moda_salario_grau)
+
+# Calculate the variance of 'salario' by 'grau_instrucao'
+var_salario_grau = df.groupby('grau_instrucao')['salario'].var()
+print("\nVariance of 'salario' by 'grau_instrucao':")
+print(var_salario_grau)
+
+# Calculate the coefficient of variation (CV) for 'salario' by 'grau_instrucao'
+cv_salario_grau = df.groupby('grau_instrucao')['salario'].std() / df.groupby('grau_instrucao')['salario'].mean()
+print("\nCoefficient of variation (CV) of 'salario' by 'grau_instrucao':")
+print(cv_salario_grau)
+```
+
+ 
 
 <br><br>
 
