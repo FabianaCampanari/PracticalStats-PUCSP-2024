@@ -430,7 +430,9 @@ The p-value is extremely small (6.527014259249644e-06), much smaller than the co
 We reject the null hypothesis. The incomes are different for the two marital statuses (single and married).
 ```
 
+<br>
 
+### 5. One-Way ANOVA
 
 
 
