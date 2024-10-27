@@ -10,12 +10,12 @@
 
 
 
-**Statistics and Probability**
+## **Statistics and Probability**
  
 This repository, created by [Fabiana Campanari](https://linktr.ee/fabianacampanari) in the 2nd semester of 2024, consolidates the materials and code developed for the Statistics and Probability course within the Data Science and Artificial Intelligence program at PUC-SP, under the guidance of [Professor Eric Bacconi Gonçalves](https://www.linkedin.com/in/eric-bacconi-423137/)
 ). It is designed to support hands-on learning through exercises, scripts, and datasets.
 
-### Repository Contents:
+## Repository Contents:
 
 - **Python Scripts**: This section includes scripts for a wide range of statistical analyses, covering key topics such as distributions, population and sample concepts, and hypothesis testing. Calculations include:
   - **Central Tendency**: Mean, median, and mode
@@ -35,7 +35,7 @@ This repository, created by [Fabiana Campanari](https://linktr.ee/fabianacampana
 
 - **Support Materials**: Supplementary documentation on probability, relevant datasets, and homework assignments to reinforce key concepts.
 
-### Study Topics:
+## Study Topics:
 
 This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
 
