@@ -166,6 +166,108 @@ print(f"\nVariance by 'grau_instrucao': \n{var_salario_grau}")
 print(f"\nCoefficient of variation (CV) by 'grau_instrucao': \n{cv_salario_grau}")
 ```
 
+<br>
+
+2. Sample Selection
+
+```python
+
+Copy code
+
+# Import pandas and numpy libraries
+import pandas as pd
+import numpy as np
+
+# Define the file path
+file_path = 'add_your_dataset_path_here'
+
+# Read the Excel file into a DataFrame
+df = pd.read_excel(file_path)
+
+# Sample Selection
+
+# Simple random sample without replacement with 20 elements
+sample = df.sample(20, replace=False)
+print(sample)
+
+# Simple random sample without replacement with 20 elements (fixing the random seed)
+sample = df.sample(n=20, replace=False, random_state=2903)
+print(sample)
+
+# Check the classes of the variable and their proportions
+perc_est_civ = df["estado_civil"].value_counts(normalize=True)
+print(perc_est_civ)
+
+# Execute equal stratified sample by marital status
+sample_strat_equal = df.groupby(['estado_civil'], group_keys=False).apply(lambda x: x.sample(n=10, replace=False, random_state=2903))
+print(sample_strat_equal)
+
+# Define desired total
+N = 20
+
+# Execute proportional stratified sample by marital status
+sample_strat_prop = df.groupby(['estado_civil'], group_keys=False).apply(
+    lambda x: x.sample(int(np.rint(N * len(x) / len(df))), random_state=2903)  # Proportional sample calculation
+).sample(frac=1, random_state=2903).reset_index(drop=True)  # Shuffle the sample
+print(sample_strat_prop)
+
+# Check the proportion of each marital status
+perc_est_civ = sample_strat_prop["estado_civil"].value_counts(normalize=True)
+print(perc_est_civ)
+
+# Execute equal stratified sample by region of origin
+sample_strat_equal = df.groupby(['reg_proc'], group_keys=False).apply(lambda x: x.sample(n=10, replace=False, random_state=2903))
+print(sample_strat_equal)
+
+# Execute equal stratified sample by education level
+sample_strat_equal = df.groupby(['grau_instrucao'], group_keys=False).apply(lambda x: x.sample(n=10, replace=False, random_state=2903))
+print(sample_strat_equal)
+
+# Execute equal stratified sample by region of origin and education level
+sample_strat_equal = df.groupby(['reg_proc', 'grau_instrucao'], group_keys=False).apply(lambda x: x.sample(n=10, replace=False, random_state=2903))
+print(sample_strat_equal)
+
+# Create an equal stratified sample by education level and region of origin
+sample_strat_equal = df.groupby(['grau_instrucao', 'reg_proc'], group_keys=False).apply(lambda x: x.sample(n=min(len(x), 10), replace=False, random_state=2903)).reset_index(drop=True)
+print(sample_strat_equal)
+
+# Save the stratified sample to a new Excel file
+output_path = 'path_to_save_sample/stratified_sample.xlsx'
+sample_strat_equal.to_excel(output_path, index=False)
+
+print(f"The stratified sample has been saved to {output_path}")
+```   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -173,22 +275,6 @@ print(f"\nCoefficient of variation (CV) by 'grau_instrucao': \n{cv_salario_grau}
 <br><br>
 
 <p align="center"> <a href="#top">Back to Top</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #
