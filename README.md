@@ -633,6 +633,46 @@ print("and there is also a significant interaction between these two factors.")
 
 ### 8. Chi-Square Test for One Variable.
 
+```python
+
+copy code
+
+# Import necessary libraries
+import pandas as pd
+import scipy.stats as stats
+
+# File path
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the data into a DataFrame
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print("Initial DataFrame:")
+print(df.head())
+
+# Frequency table for the variable 'reg_proc'
+freq_reg_proc = df['reg_proc'].value_counts()
+print("\nFrequency of the 'reg_proc' variable:")
+print(freq_reg_proc)
+
+# Perform Chi-Square Test
+chi2_stat, p_val = stats.chisquare(freq_reg_proc)
+print("\nChi-Square Test Results:")
+print(f"Chi-Square Statistic: {chi2_stat}")
+print(f"p-value: {p_val}")
+
+# Interpretation and Conclusion
+alpha = 0.05  # Significance level
+if p_val < alpha:
+    print("Reject the null hypothesis. The distribution of the region of origin is not the same in the sample.")
+else:
+    print("Fail to reject the null hypothesis. The distribution of the region of origin is the same in the sample.")
+```    
+
+
+    
+
 
 
 
