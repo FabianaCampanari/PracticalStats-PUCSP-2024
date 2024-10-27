@@ -54,10 +54,9 @@ This repository, created by [Fabiana 🚀 Campanari](https://linktr.ee/fabianaca
 This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
 
 
+## Statistical Measures Analysis in Python
 
-<!--
-
-## Below is code for use cases of statistical measures and hypothesis testing in statistics.
+This  contains Python scripts for conducting descriptive statistical analysis on employee salary and age data, both for the entire dataset and grouped by education level and region of origin.
 
 
 ## Features:
