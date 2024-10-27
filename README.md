@@ -668,50 +668,54 @@ if p_val < alpha:
     print("Reject the null hypothesis. The distribution of the region of origin is not the same in the sample.")
 else:
     print("Fail to reject the null hypothesis. The distribution of the region of origin is the same in the sample.")
-```    
+```
+
+<br>
 
 9. Chi-Square Test for Independence of Two Variables
 
+```python
+
+copy code
+
+# Import necessary libraries
+import pandas as pd
+import scipy.stats as stats
+
+# File path
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the data into a DataFrame
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print("Initial DataFrame:")
+print(df.head())
+
+# Create a contingency table for 'grau_instrucao' and 'reg_proc'
+contingency_table = pd.crosstab(df['grau_instrucao'], df['reg_proc'])
+print("\nContingency Table:")
+print(contingency_table)
+
+# Perform Chi-Square Test of Independence
+chi2_stat, p_val, dof, expected = stats.chi2_contingency(contingency_table)
+print("\nResults of the Chi-Square Test of Independence:")
+print(f"Chi-Square Statistic: {chi2_stat}")
+print(f"p-value: {p_val}")
+print(f"Degrees of Freedom: {dof}")
+print("Expected Frequencies:")
+print(expected)
+
+# Interpretation and Conclusion
+alpha = 0.05  # Significance level
+if p_val < alpha:
+    print("\nConclusion: Reject the null hypothesis. The distribution of education levels varies according to the region of origin.")
+else:
+    print("\nConclusion: Fail to reject the null hypothesis. The distribution of education levels does not vary according to the region of origin.")
+```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 <br><br>
 
