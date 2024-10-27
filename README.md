@@ -496,7 +496,7 @@ print("The results indicate that salary is significantly affected by education l
 
 <br>
 
-6.
+### 6.  Two-Way ANOVA
 
 ```python
 
