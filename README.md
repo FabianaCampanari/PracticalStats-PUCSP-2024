@@ -96,7 +96,7 @@ Copy code
 import pandas as pd
 
 # Define the file path to the dataset
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the dataset into a DataFrame
 df = pd.read_excel(file_path)
