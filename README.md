@@ -210,6 +210,87 @@ print("\nCoefficient of variation (CV) of 'salario' by 'grau_instrucao':")
 print(cv_salario_grau)
 ```
 
+
+```python
+
+Copy code
+
+# Importing the necessary library
+import pandas as pd
+
+# Define the file path to the dataset
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the dataset into a DataFrame
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the dataset
+df.head()
+
+# --- Descriptive Statistics for 'SALARIO' (salary) ---
+
+# Generate descriptive statistics for the 'SALARIO' column
+print("Descriptive statistics for 'SALARIO':")
+print(df.salario.describe())
+
+# Calculate the range (amplitude) of the 'SALARIO' column
+ampl_salario = df['salario'].max() - df['salario'].min()
+print("\nAmplitude of 'SALARIO':", ampl_salario)
+
+# Calculate the mode of the 'SALARIO' column
+moda_salario = df.salario.mode()[0]
+print("\nMode of 'SALARIO':", moda_salario)
+
+# Calculate the variance of the 'SALARIO' column
+var_salario = df.salario.var()
+print("\nVariance of 'SALARIO':", var_salario)
+
+# Calculate the coefficient of variation (CV) for 'SALARIO'
+cv_salario = df.salario.std() / df.salario.mean()
+print("\nCoefficient of variation (CV) of 'SALARIO':", cv_salario)
+
+# --- Descriptive Statistics for 'SALARIO' by 'grau_instrucao' (educational level) ---
+
+# Generate descriptive statistics for 'SALARIO' grouped by 'grau_instrucao' (education level)
+print("\nDescriptive statistics for 'SALARIO' grouped by 'grau_instrucao':")
+print(df.groupby('grau_instrucao')['salario'].describe())
+
+# Calculate the range (amplitude) of 'SALARIO' by 'grau_instrucao'
+ampl_salario_grau = df.groupby('grau_instrucao')['salario'].max() - df.groupby('grau_instrucao')['salario'].min()
+print("\nAmplitude of 'SALARIO' by 'grau_instrucao':")
+print(ampl_salario_grau)
+
+# Calculate the mode of 'SALARIO' by 'grau_instrucao'
+moda_salario_grau = df.groupby('grau_instrucao')['salario'].agg(lambda x: pd.Series.mode(x)[0])
+print("\nMode of 'SALARIO' by 'grau_instrucao':")
+print(moda_salario_grau)
+
+# Calculate the variance of 'SALARIO' by 'grau_instrucao'
+var_salario_grau = df.groupby('grau_instrucao')['salario'].var()
+print("\nVariance of 'SALARIO' by 'grau_instrucao':")
+print(var_salario_grau)
+
+# Calculate the coefficient of variation (CV) for 'SALARIO' by 'grau_instrucao'
+cv_salario_grau = df.groupby('grau_instrucao')['salario'].std() / df.groupby('grau_instrucao')['salario'].mean()
+print("\nCoefficient of variation (CV) of 'SALARIO' by 'grau_instrucao':")
+print(cv_salario_grau)
+
+# Summary of key descriptive statistics
+print("\nSummary for 'SALARIO' as a Whole:")
+print(f"\nAmplitude: {ampl_salario}")
+print(f"\nMode: {moda_salario}")
+print(f"\nVariance: {var_salario}")
+print(f"\nCoefficient of variation (CV): {cv_salario}")
+
+print("\nSummary by 'grau_instrucao':")
+print(f"\nAmplitude by 'grau_instrucao': \n{ampl_salario_grau}")
+print(f"\nMode by 'grau_instrucao': \n{moda_salario_grau}")
+print(f"\nVariance by 'grau_instrucao': \n{var_salario_grau}")
+print(f"\nCoefficient of variation (CV) by 'grau_instrucao': \n{cv_salario_grau}")
+```
+
+
+
  
 
 <br><br>
