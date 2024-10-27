@@ -57,11 +57,6 @@ This repository provides a comprehensive foundation in core topics, including De
 
 <!--
 
-<br>
-
- #### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari)
-
-  <br>
 
 ## Features:
 
