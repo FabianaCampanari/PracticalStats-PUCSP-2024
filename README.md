@@ -86,7 +86,7 @@ The dataset used in this analysis contains employee details, including their age
 
 ## Codes
 
-1. Statics Measures
+### 1. Statics Measures
 
 ```python
 
@@ -168,7 +168,7 @@ print(f"\nCoefficient of variation (CV) by 'grau_instrucao': \n{cv_salario_grau}
 
 <br>
 
-2. Sample Selection
+### 2. Sample Selection
 
 ```python
 
@@ -240,7 +240,7 @@ print(f"The stratified sample has been saved to {output_path}")
 
 <br>
 
-3. One-Sample t-Test
+### 3. One-Sample t-Test
 
 ```python
 Copy code
