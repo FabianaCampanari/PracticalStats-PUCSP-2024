@@ -86,7 +86,7 @@ The dataset used in this analysis contains employee details, including their age
 
 ## Codes
 
-### 1. Statics Measures
+1. Statics Measures
 
 ```python
 
@@ -237,6 +237,138 @@ sample_strat_equal.to_excel(output_path, index=False)
 
 print(f"The stratified sample has been saved to {output_path}")
 ```   
+
+<br>
+
+3. One-Sample t-Test
+
+```python
+Copy code
+
+# Exercise 3 – Test the hypothesis that the salary is equal to 12. What is your conclusion?
+# Import pandas library
+import pandas as pd
+
+# Import scipy library
+import scipy.stats as stats
+
+# File path
+file_path = 'add_your_dataset_path_here'
+
+# Load the file into Python
+df = pd.read_excel(file_path)
+print(df.head())
+
+# Bring only the age variable to perform the test
+base_age = df['idade']
+
+# Execute the t-test testing H0: age = 32 and H1: age ≠ 32
+result_t_test = stats.ttest_1samp(base_age, 32)
+p_value = result_t_test.pvalue
+alpha = 0.05
+
+if p_value < alpha:
+    print("We reject the null hypothesis (H0).")
+else:
+    print("We do not reject the null hypothesis (H0).")
+
+# Remember the mean
+print(f"Mean age: {df.idade.mean()}")
+
+# Execute the t-test testing H0: age = 34 and H1: age ≠ 34
+result_t_test = stats.ttest_1samp(base_age, 34)
+p_value = result_t_test.pvalue
+alpha = 0.05
+
+# Decision based on p-value
+if p_value < alpha:
+    print("We reject the null hypothesis (H0).")
+else:
+    print("We do not reject the null hypothesis (H0).")
+
+# With a p-value of 0.045, which is less than the significance level of 0.05, we reject the null hypothesis. This indicates that there is statistically significant evidence to suggest that the average age of employees is different from 34.
+
+# Execute the t-test testing H0: age = 35 and H1: age ≠ 35
+result_t_test = stats.ttest_1samp(base_age, 35)
+p_value = result_t_test.pvalue
+alpha = 0.05
+
+# Decision based on p-value
+if p_value < alpha:
+    print("We reject the null hypothesis (H0).")
+else:
+    print("We do not reject the null hypothesis (H0).")
+
+# With a p-value of 0.2234, which is greater than the significance level of 0.05, we do not reject the null hypothesis. This means that there is not enough evidence to conclude that the average age of employees is different from the hypothesized value (32, 35, or any other value being tested).
+
+# Answering question 3
+
+# Test the hypothesis that the salary is equal to 12. What is your conclusion?
+import pandas as pd
+import scipy.stats as stats
+
+# File path
+file_path = 'add_your_dataset_path_here'
+
+# Load the data
+df = pd.read_excel(file_path)
+print(df.head())
+
+# Select the variable of interest (salary)
+salaries = df['salario']
+
+# Execute the t-test testing H0: salary = 12 and H1: salary ≠ 12
+result_t_test = stats.ttest_1samp(salaries, 12)
+print(result_t_test)
+
+# Get the p-value from the test result
+p_value = result_t_test.pvalue
+
+# Define the significance level
+alpha = 0.05
+
+# Interpret the result
+p_value = 8.755117588192511e-06
+
+if p_value < alpha:
+    print("We reject the null hypothesis (H0).")
+else:
+    print("We do not reject the null hypothesis (H0).")
+
+# Define the conclusion based on the p-value and the significance level
+if p_value < alpha:
+    conclusion = "We reject the null hypothesis (H0)."
+else:
+    conclusion = "We do not reject the null hypothesis (H0)."
+
+# Display the test result and conclusion
+print(f"t-test statistic: {result_t_test.statistic}")
+print(f"p-value: {result_t_test.pvalue}")
+print(conclusion)
+
+# Analysis and Conclusion with p-value and significance level
+
+# In the hypothesis test performed, we tested the null hypothesis (H0) that the average salary of employees is equal to 12 against the alternative hypothesis (H1) that the average salary of employees is different from 12.
+
+# The results of the t-test were as follows:
+# - t-test statistic: -4.500727991746298
+# - p-value: 8.755117588192511e-06
+
+# With a p-value of approximately 8.76e-06, which is significantly less than the significance level of 0.05, we reject the null hypothesis (H0). This indicates that there is statistically significant evidence to suggest that the average salary of employees is different from 12.
+
+# Therefore, the conclusion of the test is that we reject the null hypothesis (H0) and accept the alternative hypothesis (H1), indicating that the average salary of employees is not equal to 12.
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
