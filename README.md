@@ -358,6 +358,79 @@ print(conclusion)
 
 # Therefore, the conclusion of the test is that we reject the null hypothesis (H0) and accept the alternative hypothesis (H1), indicating that the average salary of employees is not equal to 12.
 ```
+<br>
+
+4. Two-Sample t-Test
+
+``python
+
+copy code
+
+### Question 4
+
+#### To test the hypothesis that income is equal for the two marital statuses (single and married), we can use the t-test for independent samples. We will follow these steps:
+### Visualization
+
+#### 1. Extract income data for singles and married individuals.
+#### 2. Perform the t-test for independent samples.
+#### 3. Interpret the p-value to accept or reject the null hypothesis.
+
+### Steps in pseudocode:
+
+1. **Import necessary libraries** (pandas and scipy.stats).
+2. **Load data from the Excel file**.
+3. **Extract income columns for singles and married individuals**.
+4. **Perform the t-test for independent samples**.
+5. **Interpret the result based on the p-value**.
+
+# Install scipy if necessary
+# %pip install scipy pandas
+import pandas as pd
+from scipy import stats
+
+# Load the data from the Excel file
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+df = pd.read_excel(file_path)
+
+# Visualize the first rows of the DataFrame
+print(df.head())
+
+# Check the mean salary by marital status group
+print(df.groupby(['estado_civil'])['salario'].describe())
+
+# Extract income columns for singles and married individuals
+single_income = df[df['estado_civil'] == 's']['salario']
+married_income = df[df['estado_civil'] == 'c']['salario']
+
+# Perform the t-test for independent samples
+t_stat, p_value = stats.ttest_ind(married_income, single_income, equal_var=False)
+
+# Display the results of the t-test
+print("Results of the t-Test:")
+print(f"t-statistic: {t_stat}")
+print(f"p-value: {p_value}")
+
+# Interpret the result
+alpha = 0.05
+if p_value < alpha:
+    print("Conclusion: We reject the null hypothesis. The incomes are different for the two marital statuses.")
+else:
+    print("Conclusion: We do not reject the null hypothesis. The incomes are equal for the two marital statuses.")
+
+### Conclusion Results of the t-Test:
+
+#### Interpretation:
+ - t-statistic: 4.567472731259726 <br>
+ - p-value: 6.527014259249644e-06
+
+The p-value is extremely small (6.527014259249644e-06), much smaller than the common significance level (0.05). This indicates that there is a significant difference in income between the two marital statuses.
+
+**Conclusion:**
+
+We reject the null hypothesis. The incomes are different for the two marital statuses (single and married).
+```
+
+
 
 
 
