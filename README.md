@@ -360,9 +360,9 @@ print(conclusion)
 ```
 <br>
 
-4. Two-Sample t-Test
+### 4. Two-Sample t-Test
 
-``python
+```python
 
 copy code
 
