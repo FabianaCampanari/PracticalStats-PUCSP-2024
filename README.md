@@ -435,6 +435,66 @@ We reject the null hypothesis. The incomes are different for the two marital sta
 ### 5. One-Way ANOVA
 
 
+```python
+
+copy code
+
+# Import necessary libraries
+import pandas as pd
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+# File path
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the data into Python
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print(df.head())
+
+# Check the average salary by education level
+print("Average salary by education level:")
+print(df.groupby(['grau_instrucao'])['salario'].describe())
+
+# Create a model to compare salary by education level
+model = ols('salario ~ grau_instrucao', data=df).fit()
+
+# Perform ANOVA
+anova_result = sm.stats.anova_lm(model)
+print("ANOVA Results:")
+print(anova_result)
+
+# Interpret the results
+alpha = 0.05
+p_value = anova_result['PR(>F)'][0]
+if p_value < alpha:
+    conclusion_anova = "There is a significant difference in salaries among different education levels."
+else:
+    conclusion_anova = "There is no significant difference in salaries among different education levels."
+print(f"Conclusion from ANOVA: {conclusion_anova}")
+
+# Post Hoc Tukey Test to evaluate specific differences
+tukey = pairwise_tukeyhsd(endog=df.salario, groups=df.grau_instrucao)
+print("Post Hoc Tukey Test Results:")
+print(tukey.summary())
+
+# Interpret Tukey results
+print("Interpreting Tukey's test results:")
+for result in tukey.summary().data[1:]:  # Skip header
+    group1, group2, meandiff, p_adj, lower, upper, reject = result
+    if reject:
+        print(f"Significant difference between {group1} and {group2}: mean difference = {meandiff:.4f}, p-adj = {p_adj:.4f}")
+    else:
+        print(f"No significant difference between {group1} and {group2}: mean difference = {meandiff:.4f}, p-adj = {p_adj:.4f}")
+
+# Overall conclusion
+print("Overall Conclusion:")
+print("The results indicate that salary is significantly affected by education level, with higher education corresponding to higher salaries.")
+```
+
+
 
 
 
