@@ -5,9 +5,13 @@
 
 <br><br>
 
-
 ## <p align="center">  Practical Stats - PUCSP  2nd Semester 2024 
 
+<br>
+
+#### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari)
+
+<br>
 
 
 ## **Statistics and Probability**
