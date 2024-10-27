@@ -670,8 +670,7 @@ else:
     print("Fail to reject the null hypothesis. The distribution of the region of origin is the same in the sample.")
 ```    
 
-
-    
+9. Chi-Square Test for Independence of Two Variables
 
 
 
