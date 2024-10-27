@@ -5,7 +5,7 @@
 
 <br><br>
 
-## <p align="center">  Practical Stats - PUCSP  2nd Semester 2024 
+## <p align="center">  Practical Statistics - PUCSP  2nd Semester 2024 
 
 <br>
 
