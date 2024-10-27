@@ -563,6 +563,72 @@ print("\nOverall Conclusion:")
 print("The results indicate that salary is significantly affected by both education level and marital status.")
 ```
 
+<br>
+
+### 7. 
+
+```python
+
+# Import necessary libraries
+import pandas as pd
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+# File path
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the data into Python
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print("Initial DataFrame:")
+print(df.head())
+
+# Check the average salary by education level and marital status
+print("\nAverage salary by education level and marital status:")
+print(df.groupby(['grau_instrucao', 'estado_civil'])['salario'].describe())
+
+# Generate the model to compare salary by education level and marital status, including interaction
+model = ols('salario ~ grau_instrucao * estado_civil', data=df).fit()
+
+# Apply ANOVA
+anova = sm.stats.anova_lm(model)
+print("\nANOVA Results:")
+print(anova)
+
+# Interpret the results
+alpha = 0.05
+p_value_instrucao = anova['PR(>F)']['grau_instrucao']
+p_value_civil = anova['PR(>F)']['estado_civil']
+p_value_interaction = anova['PR(>F)']['grau_instrucao:estado_civil']
+
+# Conclusions from ANOVA
+conclusions = {
+    "Grau de Instrução": "significant" if p_value_instrucao < alpha else "not significant",
+    "Estado Civil": "significant" if p_value_civil < alpha else "not significant",
+    "Interação": "significant" if p_value_interaction < alpha else "not significant"
+}
+
+for factor, result in conclusions.items():
+    print(f"Conclusion from ANOVA for {factor}: There is a {result} effect.")
+
+# Post Hoc Tukey Test for marital status
+print("\nPost Hoc Tukey Test Results for Marital Status:")
+tukey_estado_civil = pairwise_tukeyhsd(endog=df.salario, groups=df.estado_civil)
+print(tukey_estado_civil.summary())
+
+# Post Hoc Tukey Test for education level
+print("\nPost Hoc Tukey Test Results for Education Level:")
+tukey_instrucao = pairwise_tukeyhsd(endog=df.salario, groups=df.grau_instrucao)
+print(tukey_instrucao.summary())
+
+# Overall conclusion
+print("\nOverall Conclusion:")
+print("The results indicate that salary is significantly affected by both education level and marital status,")
+print("and there is also a significant interaction between these two factors.")
+```
+
 
 
 
