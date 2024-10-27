@@ -389,7 +389,7 @@ import pandas as pd
 from scipy import stats
 
 # Load the data from the Excel file
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 df = pd.read_excel(file_path)
 
 # Visualize the first rows of the DataFrame
@@ -446,7 +446,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 # File path
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the data into Python
 df = pd.read_excel(file_path)
@@ -509,7 +509,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 # File path
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the data into Python
 df = pd.read_excel(file_path)
@@ -576,7 +576,7 @@ from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 # File path
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the data into Python
 df = pd.read_excel(file_path)
@@ -642,7 +642,7 @@ import pandas as pd
 import scipy.stats as stats
 
 # File path
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the data into a DataFrame
 df = pd.read_excel(file_path)
@@ -683,7 +683,7 @@ import pandas as pd
 import scipy.stats as stats
 
 # File path
-file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+file_path = 'add_your_dataset_path_here'
 
 # Load the data into a DataFrame
 df = pd.read_excel(file_path)
