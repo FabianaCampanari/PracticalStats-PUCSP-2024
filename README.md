@@ -565,7 +565,7 @@ print("The results indicate that salary is significantly affected by both educat
 
 <br>
 
-### 7. 
+### 7. Two-way ANOVA with Interaction
 
 ```python
 
