@@ -494,7 +494,74 @@ print("Overall Conclusion:")
 print("The results indicate that salary is significantly affected by education level, with higher education corresponding to higher salaries.")
 ```
 
+<br>
 
+6.
+
+```python
+
+copy code
+
+# Import necessary libraries
+import pandas as pd
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
+# File path
+file_path = '/Users/fabicampanari/Desktop/_8-Prova Matematematica/1-statiscalMeasures_ Hypothesis Testing II./1🇧🇷-statiscalMeasures_ Hypothesis Testing II./answeredCodes_statiscalMeasures/cadastro_funcionarios.xlsx'
+
+# Load the data into Python
+df = pd.read_excel(file_path)
+
+# Display the first few rows of the DataFrame
+print("Initial DataFrame:")
+print(df.head())
+
+# Check the average salary by education level and marital status
+print("\nAverage salary by education level and marital status:")
+print(df.groupby(['grau_instrucao', 'estado_civil'])['salario'].describe())
+
+# Generate the model to compare salary by education level and marital status
+model = ols('salario ~ grau_instrucao + estado_civil', data=df).fit()
+
+# Apply ANOVA
+anova_result = sm.stats.anova_lm(model)
+print("\nANOVA Results:")
+print(anova_result)
+
+# Interpret the results
+alpha = 0.05
+p_value_instrucao = anova_result['PR(>F)']['grau_instrucao']
+p_value_civil = anova_result['PR(>F)']['estado_civil']
+
+if p_value_instrucao < alpha:
+    conclusion_instrucao = "There is a significant difference in salaries among different education levels."
+else:
+    conclusion_instrucao = "There is no significant difference in salaries among different education levels."
+
+if p_value_civil < alpha:
+    conclusion_civil = "There is a significant difference in salaries among different marital statuses."
+else:
+    conclusion_civil = "There is no significant difference in salaries among different marital statuses."
+
+print(f"\nConclusion from ANOVA for Education Level: {conclusion_instrucao}")
+print(f"Conclusion from ANOVA for Marital Status: {conclusion_civil}")
+
+# Post Hoc Tukey Test to evaluate specific differences for marital status
+print("\nPost Hoc Tukey Test Results for Marital Status:")
+tukey_estado_civil = pairwise_tukeyhsd(endog=df.salario, groups=df.estado_civil)
+print(tukey_estado_civil.summary())
+
+# Post Hoc Tukey Test to evaluate specific differences for education level
+print("\nPost Hoc Tukey Test Results for Education Level:")
+tukey_instrucao = pairwise_tukeyhsd(endog=df.salario, groups=df.grau_instrucao)
+print(tukey_instrucao.summary())
+
+# Overall conclusion
+print("\nOverall Conclusion:")
+print("The results indicate that salary is significantly affected by both education level and marital status.")
+```
 
 
 
