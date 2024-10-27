@@ -629,7 +629,9 @@ print("The results indicate that salary is significantly affected by both educat
 print("and there is also a significant interaction between these two factors.")
 ```
 
+<br>
 
+### 8. Chi-Square Test for One Variable.
 
 
 
