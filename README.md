@@ -56,8 +56,7 @@ This repository provides a comprehensive foundation in core topics, including De
 
 ## Statistical Measures Analysis in Python
 
-This  contains Python scripts for conducting descriptive statistical analysis on employee salary and age data, both for the entire dataset and grouped by education level and region of origin.
-
+This repository contains Python scripts for descriptive statistical analysis of employee salary and age data, including analyses for the entire dataset as well as subgrouped by education level and region.
 
 ## Features:
 
