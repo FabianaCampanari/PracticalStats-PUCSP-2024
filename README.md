@@ -21,6 +21,8 @@ This repository, created by [Fabiana Campanari](https://linktr.ee/fabianacampana
 
 ## Repository Contents:
 
+<br>
+
 - **Python Scripts**: This section includes scripts for a wide range of statistical analyses, covering key topics such as distributions, population and sample concepts, and hypothesis testing. Calculations include:
   - **Central Tendency**: Mean, median, and mode
   - **Dispersion**: Standard deviation, variance, and range
@@ -28,16 +30,24 @@ This repository, created by [Fabiana Campanari](https://linktr.ee/fabianacampana
   - **Distribution Shape**: Skewness and kurtosis
   - **Confidence Intervals** for estimating population parameters
   - **Correlation and Covariance** for bivariate analysis
+ 
+ <br>   
 
 - **Practical Exercises**: Available in Python and Excel, these exercises provide hands-on practice in calculating statistical measures and applying concepts, including:
   - **Analysis of Variance (ANOVA)**: Comparing means across multiple groups
   - **Hypothesis Testing**: Null hypothesis (\( H_0 \)) tests, such as T-tests (one-sample, independent, and paired), ANOVA, and Chi-square tests
   - **Regression Analysis**: Linear regression models for predictive analysis
   - **Probability**: Exercises covering probability distributions, expected value, and variance
+ 
+ <br>   
 
 - **Statistical Tests**: This section includes implementations of statistical tests tailored to analyze variables like age and salary, categorized by region and educational level. Each test includes the process of setting up and testing the null hypothesis (\( H_0 \)) for statistical significance.
 
+<br>  
+
 - **Support Materials**: Supplementary documentation on probability, relevant datasets, and homework assignments to reinforce key concepts.
+
+<br>
 
 ## Study Topics:
 
