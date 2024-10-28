@@ -5,7 +5,8 @@
 
 <br><br>
 
-## <p align="center">  Practical Statistics - PUCSP  2nd Semester 2024 
+## <p align="center">  Practical Statistics - PUC-SP  2nd Semester 2024 
+#### <p align="center"> Faculdade de Ciencia de Dados e Inteligencia Artificial 2 Semestre - 2024
 
 <br>
 
