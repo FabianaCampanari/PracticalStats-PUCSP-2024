@@ -5,8 +5,8 @@
 
 <br><br>
 
-## <p align="center">  Practical Statistics and Probability in Pytrhon and Excel
-#### <p align="center"> Graduation in Data Science and Artificial Intelligence, 2nd Semester - 2024
+## <p align="center">  Practical Statistics and Probability in Python and Excel
+### <p align="center"> Data Science and Artificial Intelligence Graduation, 2nd Semester - 2024
 
 <br>
 
