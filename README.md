@@ -50,6 +50,10 @@ This repository, created by [Fabiana 🚀 Campanari](https://linktr.ee/fabianaca
 
 <br>
 
+![mascot_motion1](https://github.com/user-attachments/assets/2a7b0742-b1b1-4f4e-ba4b-50dedf6f30bb)
+
+<br>
+
 ## Study Topics:
 
 This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
