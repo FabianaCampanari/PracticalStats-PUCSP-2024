@@ -6,7 +6,7 @@
 <br><br>
 
 ## <p align="center">  Practical Statistics - PUC-SP  2nd Semester 2024 
-#### <p align="center"> College of Data Science and Artificial Intelligence, 2nd Semester - 2024
+#### <p align="center"> Graduation in Data Science and Artificial Intelligence, 2nd Semester - 2024
 
 <br>
 
