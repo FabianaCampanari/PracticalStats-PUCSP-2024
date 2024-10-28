@@ -6,11 +6,11 @@
 <br><br>
 
 ## <p align="center">  Practical Statistics and Probability in Python and Excel
-### <p align="center"> University of Data Science and Artificial Intelligence, PUC-SP, 2nd Semester of 2024
+#### <p align="center"> [University of Data Science and Artificial Intelligence](), PUC-SP, 2nd Semester/2024
 
 <br>
 
-#### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari)
+#### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari) 
 
 <br>
 
