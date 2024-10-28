@@ -50,7 +50,8 @@ This repository, created by [Fabiana 🚀 Campanari](https://linktr.ee/fabianaca
 
 <br>
 
-![mascot_motion1](https://github.com/user-attachments/assets/2a7b0742-b1b1-4f4e-ba4b-50dedf6f30bb)
+ <p align="center">
+<img src="https://github.com/user-attachments/assets/2a7b0742-b1b1-4f4e-ba4b-50dedf6f30bb" />
 
 <br>
 
