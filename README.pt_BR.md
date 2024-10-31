@@ -15,4 +15,6 @@
 <br><br>
 
 
-Prentation Art Direction and Design , Data Analyse and Sound Design Remix by Fabiana Campanari by F
+Prentation Art Direction and Design , Data Analyse and Sound Design Remix 
+
+by Fabiana  🚀 Campanari 
