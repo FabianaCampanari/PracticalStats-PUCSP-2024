@@ -573,8 +573,9 @@ print("The results indicate that salary is significantly affected by both educat
 
 ### 7. Two-way ANOVA with Interaction
 
-```python
+`👇 Copy code`
 
+```python
 # Import necessary libraries
 import pandas as pd
 import statsmodels.api as sm
