@@ -505,10 +505,9 @@ print("The results indicate that salary is significantly affected by education l
 
 ### 6.  Two-Way ANOVA
 
+`👇 Copy code`
+
 ```python
-
-copy code
-
 # Import necessary libraries
 import pandas as pd
 import statsmodels.api as sm
