@@ -180,10 +180,9 @@ print(f"\nCoefficient of variation (CV) by 'grau_instrucao': \n{cv_salario_grau}
 
 ### 2. Sample Selection
 
+`👇 Copy code`
+
 ```python
-
-Copy code
-
 # Import pandas and numpy libraries
 import pandas as pd
 import numpy as np
