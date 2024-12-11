@@ -640,10 +640,9 @@ print("and there is also a significant interaction between these two factors.")
 
 ### 8. Chi-Square Test for One Variable.
 
+`👇 Copy code`
+
 ```python
-
-copy code
-
 # Import necessary libraries
 import pandas as pd
 import scipy.stats as stats
