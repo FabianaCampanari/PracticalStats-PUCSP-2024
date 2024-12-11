@@ -96,6 +96,8 @@ The dataset used in this analysis contains employee details, including their age
 
 ### 1. Statics Measures
 
+`👇 Copy code`
+
 ```python
 
 Copy code
