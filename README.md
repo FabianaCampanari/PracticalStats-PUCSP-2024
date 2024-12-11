@@ -252,7 +252,7 @@ print(f"The stratified sample has been saved to {output_path}")
 
 ### 3. One-Sample t-Test
 
-` 👇☟Copy code`
+`👇 Copy code`
 
 ```python
 
