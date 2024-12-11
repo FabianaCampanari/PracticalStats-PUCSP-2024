@@ -443,11 +443,9 @@ We reject the null hypothesis. The incomes are different for the two marital sta
 
 ### 5. One-Way ANOVA
 
+`👇 Copy code`
 
 ```python
-
-copy code
-
 # Import necessary libraries
 import pandas as pd
 import statsmodels.api as sm
