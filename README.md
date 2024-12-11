@@ -57,16 +57,16 @@ This repository, created by [Fabiana 🚀 Campanari](https://linktr.ee/fabianaca
 
 <br>
 
-## Study Topics:
+## [Study Topics]():
 
 This repository provides a comprehensive foundation in core topics, including Descriptive Statistics, Probability Distributions, Population and Sample, Hypothesis Testing I and II (featuring null hypothesis (\( H_0 \)) testing), and Regression Analysis. It serves as a practical tool for building statistical and analytical skills.
 
 
-## Statistical Measures Analysis in Python
+## [Statistical Measures Analysis in Python]():
 
 This repository contains Python scripts for descriptive statistical analysis of employee salary and age data, including analyses for the entire dataset as well as subgrouped by education level and region.
 
-## Features:
+## [Features]():
 
 Descriptive statistics: Mean, Median, Mode, Variance, Standard Deviation, Coefficient of Variation (CV), and Amplitude (Range).
 Grouped analysis: The same statistics calculated by grouping data based on region and education level.
@@ -74,14 +74,14 @@ Designed for students: Easy-to-follow code with comments and explanations for ea
 
 <br>
 
-## Dataset:
+## [Dataset]():
 
 The dataset used in this analysis contains employee details, including their age, salary, region of origin (reg_proc), and education level (grau_instrucao).
 [Click here to get the Dataset](https://github.com/FabianaCampanari/statisticalMeasures-python-/tree/a9e92b1cbce36fa5f26edeadef937981012f0a98/Dataset)
 
 <br>
 
-## Getting Started:
+## [Getting Started]():
 
 ### To run this script, ensure you have the following:
 
@@ -92,7 +92,7 @@ The dataset used in this analysis contains employee details, including their age
 - An Excel file containing the dataset in the appropriate format.
 
 
-## Codes
+## [Codes]():
 
 ### 1. Statics Measures
 
@@ -372,10 +372,9 @@ print(conclusion)
 
 ### 4. Two-Sample t-Test
 
+`👇 Copy code`
+
 ```python
-
-copy code
-
 ### Question 4
 
 #### To test the hypothesis that income is equal for the two marital statuses (single and married), we can use the t-test for independent samples. We will follow these steps:
