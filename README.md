@@ -680,10 +680,9 @@ else:
 
 9. Chi-Square Test for Independence of Two Variables
 
+`👇 Copy code`
+
 ```python
-
-copy code
-
 # Import necessary libraries
 import pandas as pd
 import scipy.stats as stats
