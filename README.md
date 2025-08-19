@@ -4,18 +4,29 @@
 
 <br><br>
 
-![2129d7ad-6afd-4166-9bf1-a4f9c3b9e5cc](https://github.com/user-attachments/assets/faf3e0a3-3610-4c0b-99bb-afb7a765f28d)
+## <p align="center">  ✍🏻 Practical Statistics and Probability in Python and Excel
+#### <p align="center"> [University of Data Science and Artificial Intelligence]() - PUC-SP - 2nd Semester/2024
+
+<br><br>    
+
+<!--  video presentation -->
+
+
+##### 🎶 Prelude Suite no.1 (J. S. Bach) - [Sound Design Remix]()
+
+https://github.com/user-attachments/assets/025d8ff0-f2b0-4eb6-b40c-56ef7c533383
+
+####  📺 For better resolution, watch the video on [YouTube.](https://youtu.be/_ytC6S4oDbM)
+
+
 
 <br><br>
 
-## <p align="center">  Practical Statistics and Probability in Python and Excel
-#### <p align="center"> [University of Data Science and Artificial Intelligence]() - PUC-SP - 2nd Semester/2024
-
-<br>
-
+<!--### <p align="center">  <img src="https://github.githubassets.com/images/icons/emoji/octocat.png" width="46">  -->
 #### <p align="center"> [![Sponsor FabianaCampanari ](https://img.shields.io/badge/Sponsor-FabianaCampanari-brightgreen?logo=GitHub)](https://github.com/sponsors/FabianaCampanari) 
 
-<br>
+
+<br><br>
 
 
 ## **Statistics and Probability**
