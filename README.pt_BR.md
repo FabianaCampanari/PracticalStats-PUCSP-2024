@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/bea8afed-6ace-41a2-97b1-0304fa47b7d3
 
 Prentation Art Direction and Design , Data Analyse and Sound Design Remix 
 
-by Fabiana  🚀 Campanari 
+by Fabiana  ⚡️ Campanari 
 
 
 
